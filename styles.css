@@ -525,6 +525,7 @@ p {
   width: 100%;
   min-width: 820px;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .fee-table th,
@@ -536,11 +537,23 @@ p {
 }
 
 .fee-table th {
-  background: #dff1ff;
-  color: #18324c;
+  background: #334155;
+  color: #ffffff;
   font-size: var(--type-h6);
   font-weight: 600;
   line-height: 1.5;
+}
+
+.fee-table th:nth-child(1),
+.fee-table td:nth-child(1) {
+  width: 180px;
+  white-space: nowrap;
+}
+
+.fee-table th:nth-child(2),
+.fee-table td:nth-child(2) {
+  width: 260px;
+  white-space: nowrap;
 }
 
 .fee-table td {
@@ -558,6 +571,18 @@ p {
 .fee-table td:nth-child(2) {
   color: var(--ink);
   font-weight: 600;
+}
+
+.fee-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 1.15em;
+}
+
+.fee-list li {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .refund-panel {
