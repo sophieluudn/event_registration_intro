@@ -646,6 +646,42 @@ p {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --type-h1: 36px;
+    --type-h2: 30px;
+    --type-h3: 26px;
+    --type-h4: 24px;
+    --type-h5: 22px;
+    --type-h6: 20px;
+    --type-body: 21px;
+    --type-small: 18px;
+    --type-slogan: 24px;
+    --type-card-title: 24px;
+    --type-card-body: 21px;
+    --type-card-body-compact: 21px;
+    --type-button: 20px;
+  }
+
+  body,
+  p,
+  li,
+  .section-grid > p,
+  .copy-block p,
+  .feature-card p,
+  .mode-card p,
+  .type-lanes p,
+  .timeline p,
+  .fee-card p,
+  .refund-grid p,
+  .contact-grid p,
+  .contact-grid span {
+    line-height: 1.8;
+  }
+
+  .feature-card h3 {
+    line-height: 1.35;
+  }
+
   .site-header {
     top: 10px;
     min-height: auto;
@@ -653,11 +689,11 @@ p {
   }
 
   .brand {
-    font-size: 0.94rem;
+    font-size: var(--type-small);
   }
 
   .nav-links a {
-    font-size: 0.84rem;
+    font-size: var(--type-small);
     padding: 6px 9px;
   }
 
