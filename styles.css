@@ -242,6 +242,14 @@ a {
   max-width: 860px;
 }
 
+.operations-section {
+  display: block;
+}
+
+.operations-section .copy-block {
+  max-width: none;
+}
+
 h2 {
   margin: 0;
   color: #11233a;
@@ -320,7 +328,6 @@ p {
 .feature-card,
 .type-lanes article,
 .timeline article,
-.fee-card,
 .contact-grid article {
   border: 1px solid rgba(220, 232, 243, 0.95);
   border-radius: var(--radius);
@@ -336,7 +343,6 @@ p {
 .feature-card p,
 .type-lanes p,
 .timeline p,
-.fee-card p,
 .refund-grid p,
 .fine-print,
 .contact-grid p,
@@ -384,7 +390,6 @@ p {
 
 .type-lanes p,
 .timeline p,
-.fee-card p,
 .refund-grid p,
 .contact-grid p,
 .contact-grid span {
@@ -479,7 +484,9 @@ p {
 
 .timeline {
   display: grid;
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
 }
 
 .timeline article {
@@ -506,37 +513,50 @@ p {
   line-height: 1.6;
 }
 
-.fee-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
+.fee-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(220, 232, 243, 0.95);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
 }
 
-.fee-card {
-  min-height: 178px;
-  padding: 20px;
+.fee-table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
 }
 
-.fee-card span {
-  display: block;
-  color: #496177;
+.fee-table th,
+.fee-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.fee-table th {
+  background: #eef8ff;
+  color: #18324c;
   font-size: var(--type-h6);
   font-weight: 600;
   line-height: 1.5;
 }
 
-.fee-card strong {
-  display: block;
-  margin: 16px 0 10px;
-  color: var(--ink);
-  font-size: var(--type-card-title);
-  font-weight: 600;
-  line-height: 1.35;
+.fee-table td {
+  color: var(--muted);
+  font-size: var(--type-card-body-compact);
+  line-height: 1.7;
 }
 
-.accent-free {
-  background: linear-gradient(135deg, #ffffff, #edfff9);
-  border-color: rgba(37, 199, 168, 0.34);
+.fee-table td:first-child,
+.fee-table td:nth-child(2) {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.fee-table tr:last-child td {
+  border-bottom: 0;
 }
 
 .refund-panel {
@@ -570,8 +590,8 @@ p {
 
 .closing-band {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 38px;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 28px;
   align-items: center;
   background: #102033;
   color: #fff;
@@ -592,13 +612,24 @@ p {
 .contact-grid article {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.16);
-  padding: 24px;
+  padding: 18px 20px;
 }
 
 .contact-grid h3,
 .contact-grid p,
 .contact-grid span {
   color: #fff;
+}
+
+.contact-grid h3 {
+  font-size: var(--type-h5);
+  line-height: 1.4;
+}
+
+.contact-grid p,
+.contact-grid span {
+  font-size: var(--type-small);
+  line-height: 1.6;
 }
 
 .contact-grid p {
@@ -651,7 +682,7 @@ p {
 
   .feature-grid,
   .type-lanes,
-  .fee-grid {
+  .timeline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -681,7 +712,6 @@ p {
   .feature-card p,
   .type-lanes p,
   .timeline p,
-  .fee-card p,
   .refund-grid p,
   .contact-grid p,
   .contact-grid span {
@@ -729,7 +759,7 @@ p {
 
   .feature-grid,
   .type-lanes,
-  .fee-grid,
+  .timeline,
   .refund-grid,
   .contact-grid {
     grid-template-columns: 1fr;
