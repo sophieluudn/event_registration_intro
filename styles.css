@@ -66,18 +66,6 @@ a {
   white-space: nowrap;
 }
 
-.brand-mark {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--blue), var(--mint));
-  color: #fff;
-  font-size: 0.72rem;
-  letter-spacing: 0;
-}
-
 .nav-links {
   display: flex;
   gap: 6px;
