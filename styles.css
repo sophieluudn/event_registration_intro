@@ -220,7 +220,7 @@ h2 {
   margin: 0;
   color: #11233a;
   font-size: clamp(2rem, 4vw, 3.7rem);
-  line-height: 1.08;
+  line-height: 1.5;
   letter-spacing: 0;
 }
 
