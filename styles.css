@@ -234,6 +234,14 @@ a {
   align-items: start;
 }
 
+.registration-section {
+  display: block;
+}
+
+.registration-section .copy-block {
+  max-width: 860px;
+}
+
 h2 {
   margin: 0;
   color: #11233a;
@@ -310,7 +318,6 @@ p {
 }
 
 .feature-card,
-.mode-card,
 .type-lanes article,
 .timeline article,
 .fee-card,
@@ -327,7 +334,6 @@ p {
 }
 
 .feature-card p,
-.mode-card p,
 .type-lanes p,
 .timeline p,
 .fee-card p,
@@ -367,7 +373,6 @@ p {
   line-height: 1.7;
 }
 
-.mode-card h3,
 .type-lanes h3,
 .timeline h3,
 .refund-panel h3,
@@ -377,7 +382,6 @@ p {
   line-height: 1.35;
 }
 
-.mode-card p,
 .type-lanes p,
 .timeline p,
 .fee-card p,
@@ -386,20 +390,6 @@ p {
 .contact-grid span {
   font-size: var(--type-card-body);
   line-height: 1.7;
-}
-
-.mode-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.mode-card {
-  display: grid;
-  min-height: 150px;
-  place-items: center;
-  padding: 28px;
-  text-align: center;
 }
 
 .soft-band {
@@ -678,7 +668,6 @@ p {
   .section-grid > p,
   .copy-block p,
   .feature-card p,
-  .mode-card p,
   .type-lanes p,
   .timeline p,
   .fee-card p,
@@ -728,7 +717,6 @@ p {
   }
 
   .feature-grid,
-  .mode-grid,
   .type-lanes,
   .fee-grid,
   .refund-grid,
@@ -737,7 +725,6 @@ p {
   }
 
   .feature-card,
-  .mode-card,
   .type-lanes article,
   .refund-panel {
     padding: 22px;
