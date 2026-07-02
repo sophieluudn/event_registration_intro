@@ -591,17 +591,26 @@ p {
 
 .closing-band {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 28px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: start;
   background: #102033;
   color: #fff;
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
-.closing-band h2 {
+.closing-band h2,
+.contact-heading {
   color: #fff;
+}
+
+.contact-heading {
+  margin: 0;
+  font-size: var(--type-h3);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
 }
 
 .contact-grid {
@@ -636,8 +645,8 @@ p {
 }
 
 .contact-grid li {
-  font-size: var(--type-body);
-  line-height: 1.7;
+  font-size: var(--type-small);
+  line-height: 1.6;
   opacity: 0.86;
 }
 
@@ -715,7 +724,7 @@ p {
   .contact-grid p,
   .contact-grid span,
   .contact-grid li {
-    line-height: 1.8;
+    line-height: 1.6;
   }
 
   .feature-card h3 {
@@ -760,8 +769,7 @@ p {
   .feature-grid,
   .type-lanes,
   .timeline,
-  .refund-grid,
-  .contact-grid {
+  .refund-grid {
     grid-template-columns: 1fr;
   }
 
