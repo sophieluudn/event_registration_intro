@@ -193,19 +193,11 @@ a {
   padding: 84px 0;
 }
 
-.intro-band,
 .soft-band,
 .closing-band {
   width: 100%;
   padding-right: max(20px, calc((100% - 1120px) / 2));
   padding-left: max(20px, calc((100% - 1120px) / 2));
-}
-
-.intro-band {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(237, 251, 248, 0.92));
-  border-block: 1px solid rgba(220, 232, 243, 0.8);
 }
 
 .section-grid,
@@ -595,7 +587,6 @@ p {
     padding: 58px 0;
   }
 
-  .intro-band,
   .soft-band,
   .closing-band {
     padding-right: 14px;
