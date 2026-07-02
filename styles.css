@@ -466,6 +466,17 @@ p {
   color: var(--muted);
 }
 
+.flow-note {
+  margin-top: 18px;
+  border: 1px solid rgba(19, 184, 220, 0.28);
+  border-radius: var(--radius);
+  background: rgba(240, 250, 255, 0.86);
+  color: #36556f;
+  font-size: var(--type-small);
+  line-height: 1.6;
+  padding: 16px 18px;
+}
+
 .timeline {
   display: grid;
   gap: 14px;
