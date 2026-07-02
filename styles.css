@@ -515,9 +515,9 @@ p {
 
 .fee-table-wrap {
   overflow-x: auto;
-  border: 1px solid rgba(220, 232, 243, 0.95);
+  border: 2px solid #b8d4ea;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
   box-shadow: var(--shadow);
 }
 
@@ -529,14 +529,14 @@ p {
 
 .fee-table th,
 .fee-table td {
-  border-bottom: 1px solid var(--line);
+  border: 1px solid #c9dceb;
   padding: 18px 20px;
   text-align: left;
   vertical-align: top;
 }
 
 .fee-table th {
-  background: #eef8ff;
+  background: #dff1ff;
   color: #18324c;
   font-size: var(--type-h6);
   font-weight: 600;
@@ -547,16 +547,17 @@ p {
   color: var(--muted);
   font-size: var(--type-card-body-compact);
   line-height: 1.7;
+  background: #ffffff;
+}
+
+.fee-table tbody tr:nth-child(even) td {
+  background: #f4faff;
 }
 
 .fee-table td:first-child,
 .fee-table td:nth-child(2) {
   color: var(--ink);
   font-weight: 600;
-}
-
-.fee-table tr:last-child td {
-  border-bottom: 0;
 }
 
 .refund-panel {
@@ -617,7 +618,8 @@ p {
 
 .contact-grid h3,
 .contact-grid p,
-.contact-grid span {
+.contact-grid span,
+.contact-grid li {
   color: #fff;
 }
 
@@ -626,20 +628,17 @@ p {
   line-height: 1.4;
 }
 
-.contact-grid p,
-.contact-grid span {
-  font-size: var(--type-small);
-  line-height: 1.6;
+.contact-grid ul {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0 0;
+  padding-left: 1.2em;
 }
 
-.contact-grid p {
-  margin-top: 8px;
-}
-
-.contact-grid span {
-  display: block;
-  margin-top: 6px;
-  opacity: 0.7;
+.contact-grid li {
+  font-size: var(--type-body);
+  line-height: 1.7;
+  opacity: 0.86;
 }
 
 @media (max-width: 920px) {
@@ -714,7 +713,8 @@ p {
   .timeline p,
   .refund-grid p,
   .contact-grid p,
-  .contact-grid span {
+  .contact-grid span,
+  .contact-grid li {
     line-height: 1.8;
   }
 
